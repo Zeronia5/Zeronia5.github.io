@@ -2,12 +2,15 @@
 <html>
 
 <head>
-  <!--universal characters and other general usage stuff over multiple plattforms-->
+  <!--universal characters and other general usage stuff over multiple platforms-->
   <meta charchat="UTF-8">
   <meta http-equiv="X-UY-Compatible" content="IE-=edge">
   <meta name="viewport" content="width=device-width, inital scale=1.0">
-  <!--<titel>Portfolio Charlotte Wilms</titel>-->
-  <!-- Comments -->
+
+  <!-- favicon & title in browser tab -->
+  <link rel="icon" type="image/png" href="/Images/MeLogo.png">
+  <title>Portfolio Charlotte Wilms</title>
+
   <!-- CSS-->
   <link rel="stylesheet" href="Stylesheets/Stylesheet.css">
 </head>
@@ -15,53 +18,37 @@
 <body>
   <header>
     <div class="topnav">
-      <div id="topnav-right">
-        <a href="#">
-          <h2>Log In</h2>
-        </a>
-        <a href="#">
-          <h2>Sign Up</h2>
-        </a>
-      </div>
-
       <img src="Images/MeLogo.png" alt="MeLogo">
+
+      <h1 id="title">Portfolio</h1>
+
+      <div>
+        <a href="#">Log In</a>
+        <a href="#">Sign Up</a>
+      </div>
     </div>
 
 
     <nav>
-      <div id="rectangle"></div>
-      <div class="nav">
-        <ul>
-          <!--<li><a href="openNav()"><h2>Sidebar</h2></a></li>-->
-          <a href="index.html">
-            <h2>Home</h2>
-          </a>
-          <!--<a href="#"><h2><input type="text" placeholder="Search"></h2></a>-->
-          <div class="dropdown">
-            <button class="dropbtn">
-              <h2>Projects</h2>
-              <!--<i class="fa fa-caret-down"></i>-->
-            </button>
-            <div class="dropdown-content">
-              <a href="Slides.html">Slides</a>
-              <a href="Triangel.html">Triangle</a>
-              <a href="Diagram.html">Diagram</a>
-              <a href="Flowchart.html">Flowchart</a>
-              <a href="GenerativeLogo.html">Generative Logo</a>
-            </div>
-            <!--<li><a href="Projects.html"><h2>Projects</h2></a></li>-->
-          </div>
-          <a href="MeStuff.html">
-            <h2>Me Stuff</h2>
-          </a>
-          <a href="Other.html">
-            <h2>Other</h2>
-          </a>
-        </ul>
-      </div>
+      <ul class="nav__list">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <button class="dropbtn active">Projects</button>
+          <ul class="dropdown-content">
+            <li><a href="Slides.html" class="active">Slides</a></li>
+            <li><a href="Triangel.html">Triangle</a></li>
+            <li><a href="Diagram.html">Diagram</a></li>
+            <li><a href="Flowchart.html">Flowchart</a></li>
+            <li><a href="GenerativeLogo.html">Generative Logo</a></li>
+          </ul>
+        </li>
+
+        <li><a href="MeStuff.html">Me Stuff</a></li>
+        <li><a href="Other.html">Other</a></li>
+      </ul>
     </nav>
   </header>
-
 
   <img src="Images/Slide1.JPG" alt="" width="250">
   <img src="Images/Slide2.JPG" alt="" width="250">
