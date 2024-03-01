@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+            font-family: "Courier Prime", monospace;
+            box-sizing: border-box;
+            margin: 0;
+            background-color: #a5a29f;
+        }
+
+        header {
+            background-image: url("Images/MeLogo.png");
+            img {width: 100px}
+            padding: 10px 10px;
+            background-color: #759026;
+        }
+
+        .topnav {
+            background-color: #759026;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            display: block; 
+            color: #f8f8f8;
+            /*box-sizing: border-box;
+            margin: 0;
+            background-color: #3e4d40;*/
+            text-align: center;
+            text-decoration: none;
+            padding: 30px 10px;
+            font-size: 10px;
+        }
+
+        .topnav a:hover {
+            background-color: #53661a;
+            color: rgb(170, 170, 170); 
+
+        }
+
+        #topnav-right {
+            float: right;    
+        }
+
+        .topnav a.active {
+            background-color: #dd6617;
+            color: white;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+
+        li{
+          float: left;
+        }
+        
+        li a{
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 10px 16px; 
+          text-decoration: none;
+        }
+        
+        .nav a {
+          
+            list-style: none;
+            float: left;
+            display: block; 
+            color: #f8f8f8;
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0;
+            background-color: #2c461b;
+            text-align: left;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 0px 15px;
+            font-size: 10px; 
+            list-style: none;
+        }
+
+        .nav a:hover {
+            background-color: #3e6126d2;
+            color: rgb(170, 170, 170); 
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        .headline{
+            color: #000000;
+           /*background-color: #494fc6;*/
+            padding-top: 5px;
+            padding-right: 30px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+
+        }
+       
+
+  </style>
+  <head>
+    <!--universal characters and other general usage stuff over multiple plattforms-->
+    <meta charchat="UTF-8">
+    <meta http-equiv="X-UY-Compatible" content="IE-=edge">
+    <meta name="viewport" content="width=device-width, inital scale=1.0">
+    <!--<titel>Portfolio Charlotte Wilms</titel>-->
+    <!-- Comments -->
+    <!-- CSS-->
+    <link rel="Stylesheets" href="./Stylesheets/Stylesheet.css">
+    <!-- font used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+          <div     id="topnav-right">
+              <a href="#"><h2>Log In</h2></a>
+              <a href="#"><h2>Sign Up</h2></a>
+          </div>
+          
+          <!--<h1 class="headline"> Blub</h1>-->
+          <img src="Images/MeLogo.png" alt="MeLogo">
+      </div>
+      
+      <nav1>
+        <div class="nav">
+          <ul>
+            <li><a href="Home.html"><h2>Home</h2></a></li>
+            <!--<a href="#"><h2><input type="text" placeholder="Search"></h2></a>-->
+            <li><a href="Projects.html"><h2>Projects</h2></a></li>
+            <li><a href="MeStuff.html"><h2>Me Stuff</h2></a></li>
+            <li><a href="Other.html"><h2>Other</h2></a></li>
+          </ul>
+        </div>
+        <!--<article>
+            <h2> Home</h2>
+            <a href="aufgabe1.html" target="_blank">
+                Aufgabe 1
+            </a>
+        </article>-->
+    </nav1>
+  </header>
+
+  </body>
+
+</html>
