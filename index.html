@@ -1,227 +1,13 @@
 <!DOCTYPE html>
 <html> 
-    <style> 
-        body{
-            font-family: "Courier Prime", monospace;
-            /*box-sizing: border-box;*/
-            margin: 0;
-            background-color: #a5a29f;
-        }
+  <style>
+   .title1{
+    position:absolute;
+    top: 50px; left: 100px;
+   }
 
-        header {
-            background-image: url("Images/MeLogo.png");
-            img {width: 100px}
-            padding: 10px 10px;
-            background-color: #759026;
-        }
-
-        .topnav {
-            background-color: #759026;
-            overflow: hidden;
-        }
-
-        .topnav a {
-            float: left;
-            display: block; 
-            color: #f8f8f8;
-            /*box-sizing: border-box;
-            margin: 0;
-            background-color: #3e4d40;*/
-            text-align: center;
-            text-decoration: none;
-            padding: 30px 10px;
-            font-size: 10px;
-            transition: background-color 0.15s;
-        }
-
-        .topnav a:hover {
-            background-color: #53661a;
-            color: rgb(170, 170, 170); 
-
-        }
-
-        #topnav-right {
-            float: right;    
-        }
-
-        .topnav a.active {
-            background-color: #dd6617;
-            color: white;
-        }
-        
-        .topnav .icon {
-            display: none;
-        }
-
-        li{
-          float: left;
-        }
-        
-        li a{
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 10px 16px; 
-          text-decoration: none;
-        }
-        
-        .nap {
-          overflow: hidden;
-          background-color: #2c461b;
-        }
-
-        .nav a {
-            position: relative;
-            top: -14px; left: -50px; 
-            list-style: none;
-            float: left;
-            display: block; 
-            color: #f8f8f8;
-            /*box-sizing: border-box, inherit;
-            width: 100%;*/
-            margin: 0;
-            background-color: #2c461b;
-            text-align: left;
-            text-decoration: none;
-            /*white-space: nowrap;*/
-            padding: 0px 15px;
-            font-size: 10px; 
-            /*list-style: none;*/
-            transition: background-color 0.15s;
-        }
-
-        .nav a:hover, .dropdown:hover .dropbtn{
-            background-color: #3e6126d2;
-            color: rgb(170, 170, 170); 
-
-        }
-
-        .nav a.active {
-            background-color: #dd6617;
-            opacity: 0.7;
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) {display: none;}
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-        
-        .headline{
-            color: #000000;
-           /*background-color: #494fc6;*/
-            padding-top: 5px;
-            padding-right: 30px;
-            padding-bottom: 5px;
-            padding-left: 15px;
-
-        }
-        /* needs JS
-        .sidenav {
-          height: 100%; /* 100% Full-height 
-          width: 0; /* 0 width - change this with JavaScript 
-          position: fixed; /* Stay in place 
-          z-index: 1; /* Stay on top 
-          top: 0; /* Stay at the top 
-          left: 0;
-          background-color: #111; /* Black
-          overflow-x: hidden; /* Disable horizontal scroll 
-          padding-top: 60px; /* Place content 60px from the top 
-          transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav 
-        }
-        .sidenav a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }*/
-
-        /* Dropdown Button */
-        
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-          float: left;
-          position: relative;
-          top: -14px; left: -50px;
-          /*overflow: hidden;*/
-          /*position: relative;
-          display: inline-block;*/
-        }
-        .dropdown .dropbtn {
-          /*position: relative;
-          top: -14px; left: -40px;*/
-          background-color: #2c461b;
-          color: white;
-          padding: 0px 15px;
-          font-family: inherit;
-          font-size: 10px;
-          border: none;
-          outline: none;
-          
-          margin: 0;
-        }
-
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          position: relative;
-          top: 55px; left: 40px;
-          display: none; /*code to hide the content*/
-          position: absolute;
-          background-color: #3e61263a;
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a{
-
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: #ddd;}
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {display: block;}
-
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {background-color: #3e8e41;}
-       
-        img {
-          max-width: 100%;
-          max-height: 100%;
-        }
-
-        .portrait {
-            height: 80px;
-            width: 30px;
-        }
-
-        .landscape {
-            height: 30px;
-            width: 80px;
-        }
-
-        .square {
-            height: 75px;
-            width: 75px;
-        }
-        
-    </style>
-
-    <head>
+  </style>
+  <head>
         <!--universal characters and other general usage stuff over multiple plattforms-->
         <meta charchat="UTF-8">
         <meta http-equiv="X-UY-Compatible" content="IE-=edge">
@@ -229,13 +15,13 @@
         <!--<titel>Portfolio Charlotte Wilms</titel>-->
         <!-- Comments -->
         <!-- CSS-->
-        <link rel="Stylesheets" href="./Stylesheets/Stylesheet.css">
+        <link rel="stylesheet" href="Stylesheets/Stylesheet1.css">
         <!-- font used-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         
-    </head>
+  </head>
 
     <body>
         <header>
@@ -245,14 +31,19 @@
                     <a href="#"><h2>Sign Up</h2></a>
                 </div>
                 <img src="Images/MeLogo.png" alt="MeLogo">
+                <!--<div class="titel1"><h1>Home</h1></div>-->
             </div>
 
 
             <nav1>
+              
+              <!--<svg><rect id="box" x="0" y="0" widht="1200" height="50"/> </svg> -->
               <div class="nav">
+                <div id="rectangle"></div>
                 <ul>
+                  
                   <!--<li><a href="openNav()"><h2>Sidebar</h2></a></li>-->
-                  <a href="index_v2.html"><h2>Home</h2></a>
+                  <a href="index_v3.html"><h2>Home</h2></a>
                   <!--<a href="#"><h2><input type="text" placeholder="Search"></h2></a>-->
                   <div class="dropdown">
                     <button class="dropbtn"><h2>Projects</h2>
