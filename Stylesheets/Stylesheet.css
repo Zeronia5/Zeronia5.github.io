@@ -9,30 +9,31 @@ Layout Elements
   padding-bottom: 15px;
   padding-left: 10px;
 }
+
 .courier-prime-regular {
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
 }
-  
+
 .courier-prime-bold {
   font-family: "Courier Prime", monospace;
   font-weight: 700;
   font-style: normal;
 }
-  
+
 .courier-prime-regular-italic {
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: italic;
 }
-  
+
 .courier-prime-bold-italic {
   font-family: "Courier Prime", monospace;
   font-weight: 700;
   font-style: italic;
 }
-  
+
 header {
   font-family: "Courier Prime", monospace;
   color: #ffffff;
@@ -46,6 +47,7 @@ header {
 body {
   font-family: "Courier Prime", monospace;
 }
+
 section ul li a {
   color: #000dff;
 }

@@ -1,72 +1,86 @@
 <!DOCTYPE html>
-<html> 
-  <style>
-   .title1{
-    position:absolute;
-    top: 50px; left: 100px;
-   }
+<html>
+<style>
+  .title1 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+  }
+</style>
 
-  </style>
-  <head>
-        <!--universal characters and other general usage stuff over multiple plattforms-->
-        <meta charchat="UTF-8">
-        <meta http-equiv="X-UY-Compatible" content="IE-=edge">
-        <meta name="viewport" content="width=device-width, inital scale=1.0">
-        <!--<titel>Portfolio Charlotte Wilms</titel>-->
-        <!-- Comments -->
-        <!-- CSS-->
-        <link rel="stylesheet" href="Stylesheets/Stylesheet1.css">
-        <!-- font used-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        
-  </head>
+<head>
+  <!--universal characters and other general usage stuff over multiple plattforms-->
+  <meta charchat="UTF-8">
+  <meta http-equiv="X-UY-Compatible" content="IE-=edge">
+  <meta name="viewport" content="width=device-width, inital scale=1.0">
+  <!--<titel>Portfolio Charlotte Wilms</titel>-->
+  <!-- Comments -->
+  <!-- CSS-->
+  <link rel="stylesheet" href="Stylesheets/Stylesheet1.css">
+  <!-- font used-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
-    <body>
-        <header>
-            <div class="topnav">
-                <div id="topnav-right">
-                    <a href="#"><h2>Log In</h2></a>
-                    <a href="#"><h2>Sign Up</h2></a>
-                </div>
-                <img src="Images/MeLogo.png" alt="MeLogo">
-                <!--<div class="titel1"><h1>Home</h1></div>-->
+</head>
+
+<body>
+  <header>
+    <div class="topnav">
+      <div id="topnav-right">
+        <a href="#">
+          <h2>Log In</h2>
+        </a>
+        <a href="#">
+          <h2>Sign Up</h2>
+        </a>
+      </div>
+      <img src="Images/MeLogo.png" alt="MeLogo">
+      <!--<div class="titel1"><h1>Home</h1></div>-->
+    </div>
+
+
+    <nav>
+
+      <!--<svg><rect id="box" x="0" y="0" widht="1200" height="50"/> </svg> -->
+      <div class="nav">
+        <div id="rectangle"></div>
+        <ul>
+
+          <!--<li><a href="openNav()"><h2>Sidebar</h2></a></li>-->
+          <a href="index.html">
+            <h2>Home</h2>
+          </a>
+          <!--<a href="#"><h2><input type="text" placeholder="Search"></h2></a>-->
+          <div class="dropdown">
+            <button class="dropbtn">
+              <h2>Projects</h2>
+              <!--<i class="fa fa-caret-down"></i>-->
+            </button>
+            <div class="dropdown-content">
+              <a href="Slides.html">Slides</a>
+              <a href="Triangel.html">Triangle</a>
+              <a href="Diagram.html">Diagram</a>
+              <a href="Flowchart.html">Flowchart</a>
+              <a href="GenerativeLogo.html">Generative Logo</a>
             </div>
+          </div>
+          <a href="MeStuff.html">
+            <h2>Me Stuff</h2>
+          </a>
+          <a href="Other.html">
+            <h2>Other</h2>
+          </a>
+        </ul>
+      </div>
 
+    </nav>
+  </header>
 
-            <nav>
-              
-              <!--<svg><rect id="box" x="0" y="0" widht="1200" height="50"/> </svg> -->
-              <div class="nav">
-                <div id="rectangle"></div>
-                <ul>
-                  
-                  <!--<li><a href="openNav()"><h2>Sidebar</h2></a></li>-->
-                  <a href="index.html"><h2>Home</h2></a>
-                  <!--<a href="#"><h2><input type="text" placeholder="Search"></h2></a>-->
-                  <div class="dropdown">
-                    <button class="dropbtn"><h2>Projects</h2>
-                      <!--<i class="fa fa-caret-down"></i>-->
-                    </button>
-                    <div class="dropdown-content">
-                      <a href="Slides.html">Slides</a>
-                      <a href="Triangel.html">Triangle</a>
-                      <a href="Diagram.html">Diagram</a>
-                      <a href="Flowchart.html">Flowchart</a>
-                      <a href="GenerativeLogo.html">Generative Logo</a>
-                    </div>
-                  </div>
-                  <a href="MeStuff.html"><h2>Me Stuff</h2></a>
-                  <a href="Other.html"><h2>Other</h2></a>
-                </ul>
-              </div>
-              
-          </nav>
-        </header>
+  <footer>
 
-        <footer> 
+  </footer>
+</body>
 
-        </footer>
-    </body>
 </html>

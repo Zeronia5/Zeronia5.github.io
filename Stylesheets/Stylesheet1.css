@@ -10,16 +10,21 @@ body {
 
 header {
   border-image: url("Images/MeLogo.png");
-  img {width: 100px}
+
+  img {
+    width: 100px
+  }
+
   display: block;
   padding: 10px 10px;
   background-color: #759026;
-  
+
 }
+
 .header img,
-  header h1 {
-    display: block;
-    /*vertical-align:middle;*/
+header h1 {
+  display: block;
+  /*vertical-align:middle;*/
 }
 
 .topnav {
@@ -29,7 +34,7 @@ header {
 
 .topnav a {
   float: right;
-  display: block; 
+  display: block;
   color: #f8f8f8;
   /*box-sizing: border-box;
   margin: 0;
@@ -43,12 +48,12 @@ header {
 
 .topnav a:hover {
   background-color: #53661a;
-  color: rgb(170, 170, 170); 
+  color: rgb(170, 170, 170);
 
 }
 
 #topnav-right {
-  float: right;    
+  float: right;
 }
 
 .topnav a.active {
@@ -60,7 +65,7 @@ header {
   display: none;
 }
 
-li{
+li {
   float: left;
 }
 
@@ -68,7 +73,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 16px; 
+  padding: 10px 16px;
   text-decoration: none;
 }
 
@@ -79,7 +84,8 @@ li a {
 
 .nav a {
   position: relative;
-  top: -14px; left: -40px; 
+  top: -14px;
+  left: -40px;
   list-style: none;
   float: left;
   /*display: block; */
@@ -92,11 +98,12 @@ li a {
   text-decoration: none;
   /*white-space: nowrap;*/
   padding: 0px 15px;
-  font-size: 10px; 
+  font-size: 10px;
   /*list-style: none;*/
   transition: background-color 0.15s;
 }
-.rectangle{
+
+.rectangle {
   width: 100%;
   height: 50px;
   background-color: #2c461b;
@@ -105,9 +112,10 @@ li a {
   left: 0;
 }
 
-.nav a:hover, .dropdown:hover .dropbtn {
+.nav a:hover,
+.dropdown:hover .dropbtn {
   background-color: #3e6126d2;
-  color: rgb(170, 170, 170); 
+  color: rgb(170, 170, 170);
 
 }
 
@@ -117,22 +125,26 @@ li a {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
   .topnav a.icon {
-      float: right;
-      display: block;
+    float: right;
+    display: block;
   }
 }
 
 .headline {
   color: #000000;
- /*background-color: #494fc6;*/
+  /*background-color: #494fc6;*/
   padding-top: 5px;
   padding-right: 30px;
   padding-bottom: 5px;
   padding-left: 15px;
 
 }
+
 /* needs JS
 .sidenav {
 height: 100%; /* 100% Full-height 
@@ -161,7 +173,8 @@ transition: 0.3s;
 .dropdown {
   float: left;
   position: relative;
-  top: -14px; left: -50px;
+  top: -14px;
+  left: -50px;
   /*overflow: hidden;*/
   /*position: relative;
   display: inline-block;*/
@@ -169,7 +182,8 @@ transition: 0.3s;
 
 .dropdown .dropbtn {
   position: relative;
-  top: 0px; left: 10px;
+  top: 0px;
+  left: 10px;
   background-color: #2c461b;
   color: white;
   padding: 0px 15px;
@@ -186,8 +200,10 @@ transition: 0.3s;
 .dropdown-content {
   background-color: #3e61263a;
   position: fixed;
-  top: 170px; left: 116px;
-  display: none; /*code to hide the content*/
+  top: 170px;
+  left: 116px;
+  display: none;
+  /*code to hide the content*/
   /*position: absolute;*/
 
   min-width: 160px;
@@ -209,13 +225,19 @@ transition: 0.3s;
 
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 
 img {
   max-width: 100%;
@@ -237,7 +259,7 @@ img {
   width: 75px;
 }
 
-#rectangle{
+#rectangle {
   width: 100%;
   height: 50px;
   background-color: #2c461b;
